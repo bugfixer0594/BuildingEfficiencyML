@@ -40,7 +40,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Total CO2 Emissions', fontsize=12)
     plt.ylabel('County Name', fontsize=12)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, 'countywise_co2_emissions_distribution.png'))
+    plt.savefig(os.path.join(output_folder, 'countywise_distribution_of_co2_emissions.png'))
     
     # --- Visualization 2: Which Regions Have the Best Energy Ratings?
 
@@ -55,7 +55,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Average BER Rating')
     plt.ylabel('County')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "top_regions_with_best_energy_ratings.png"))
+    plt.savefig(os.path.join(output_folder, "top_geographical_regions_with_best_energy_ratings.png"))
     
     # --- Visualization 3: Where is the Most Energy Used for Heating?
 
@@ -69,7 +69,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Total Energy Used for Heating (kWh)')
     plt.ylabel('County')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "most_energy_used_for_heating.png"))
+    plt.savefig(os.path.join(output_folder, "most_common_energy_sources_used_for_heating.png"))
     
     # --- Visualization 4: Has Energy Efficiency Improved Over Time?
 
@@ -87,7 +87,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Year of Construction')
     plt.ylabel('Energy Used for Heating (kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "energy_efficiency_improvement_over_years.png"))
+    plt.savefig(os.path.join(output_folder, "yearly_trend_in_energy_efficiency_improvements.png"))
         
     # --- Visualization 5: Have Heating-Related Emissions Reduced Over Time?
 
@@ -98,7 +98,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Year of Construction')
     plt.ylabel('Heating-Related CO₂ Emissions (kgCO₂/kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "heating_emissions_trends_over_time.png"))
+    plt.savefig(os.path.join(output_folder, "historical_trends_in_heating_emissions.png"))
     
     # --- Visualization 6: Do Better-Insulated Walls Reduce Emissions? 🏗️ --- ###
 
@@ -109,7 +109,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Wall U-Value (Lower is Better Insulated)')
     plt.ylabel('Total CO₂ Emissions (kgCO₂/kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "impact_of_wall_insulation_on_emissions.png"))
+    plt.savefig(os.path.join(output_folder, "impact_of_wall_insulation_on_co2_emissions.png"))
     
     # --- Visualization 7: How Much Heat is Lost Through the Roof? 
 
@@ -120,7 +120,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Roof U-Value (Lower is Better Insulated)')
     plt.ylabel('Total CO₂ Emissions (kgCO₂/kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "heat_loss_through_roof_trends.png"))
+    plt.savefig(os.path.join(output_folder, "heat_loss_patterns_through_roofs_over_time.png"))
     
     # --- Visualization 8: Do Larger Walls Lead to More Energy Loss?
 
@@ -131,7 +131,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Wall Area (sq m)')
     plt.ylabel('Total CO₂ Emissions (kgCO₂/kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "larger_walls_energy_loss_analysis.png"))
+    plt.savefig(os.path.join(output_folder, "energy_loss_analysis_for_larger_walls.png"))
     
     # --- Visualization 9: Does Window Size Affect Energy Efficiency?
 
@@ -142,7 +142,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Window Area (sq m)')
     plt.ylabel('Total CO₂ Emissions (kgCO₂/kWh)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "window_size_vs_efficiency.png"))
+    plt.savefig(os.path.join(output_folder, "relationship_between_window_size_and_energy_efficiency.png"))
     
     # --- Visualization 10: What Insulation Types Lead to Better BER Ratings?
 
@@ -154,7 +154,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.ylabel('Building Energy Rating (BER)')
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "insulation_type_vs_ber.png"))
+    plt.savefig(os.path.join(output_folder, "analysis_of_insulation_types_vs_building_energy_ratings.png"))
     
     # --- Visualization 11: Do Buildings with Better Heat Recovery Use Less Energy?
 
@@ -165,7 +165,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Heat Exchanger Efficiency')
     plt.ylabel('Total CO2 Emissions')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "heat_recovery_vs_energy.png"))
+    plt.savefig(os.path.join(output_folder, "comparison_of_heat_recovery_vs_energy_consumptio.png"))
     
     # --- Visualization 12: Do Larger Homes Emit More CO2?
 
@@ -176,7 +176,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Ground Floor Area (sq m)')
     plt.ylabel('Total CO2 Emissions')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "larger_homes_co2.png"))
+    plt.savefig(os.path.join(output_folder, "carbon_emissions_from_larger_residential_homes.png"))
     
     # --- Visualization 13: Do Older Homes Have Worse Emissions?
 
@@ -187,7 +187,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Year of Construction')
     plt.ylabel('Total CO2 Emissions')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "older_homes_co2.png"))
+    plt.savefig(os.path.join(output_folder, "carbon_emissions_from_older_residential_homes.png"))
     
     # --- Visualization 14: Do Newer Homes Have Better Energy Ratings?
 
@@ -198,7 +198,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Year of Construction')
     plt.ylabel('Building Energy Rating (BER)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "newer_homes_better_energy_ratings.png"))
+    plt.savefig(os.path.join(output_folder, "energy_efficiency_ratings_of_newer_homes.png"))
     
     # --- Visualization 15: Do Apartments Emit Less CO2 than Detached Houses?
 
@@ -210,7 +210,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.ylabel('Total CO2 Emissions (kg CO2)')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "apartments_vs_houses_co2.png"))
+    plt.savefig(os.path.join(output_folder, "co2_emissions_comparison_apartments_vs_houses.png"))
     
     # --- Visualization 16: Do Taller Buildings Reduce Per-Unit CO2 Emissions?
 
@@ -221,7 +221,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel('Number of Storeys')
     plt.ylabel('Total CO2 Emissions (kg CO2)')
     plt.tight_layout()
-    plt.savefig(os.path.join(output_folder, "taller_buildings_co2.png"))
+    plt.savefig(os.path.join(output_folder, "co2_emissions_analysis_for_taller_buildings.png"))
     
     # --- Visualization 17: Energy savings cost
 
@@ -233,7 +233,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.xlabel("Cost per Unit (Energy Production Cost)", fontsize=12)
     plt.ylabel("Energy Savings (kWh/m²)", fontsize=12)
     plt.grid(True)
-    plt.savefig(os.path.join(output_folder, "energy_savings_vs_cost.png"))
+    plt.savefig(os.path.join(output_folder, "correlation_between_energy_savings_and_costs.png"))
     
     # --- Visualization 18: Cost savings investment
 
@@ -246,7 +246,7 @@ def generate_visuals(file_path, output_folder="visuals"):
     plt.ylabel("Cost Savings per Investment Dollar", fontsize=12)
     plt.xticks(rotation=45, ha="right")
     plt.grid(True)
-    plt.savefig(os.path.join(output_folder, "cost_savings_per_dollar.png"))
+    plt.savefig(os.path.join(output_folder, "cost_savings_analysis_per_dollar_spent.png"))
         
     print("Visualizations saved in", output_folder)
 
