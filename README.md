@@ -45,6 +45,9 @@ This project analyzes the relationship between energy efficiency, building chara
 - Analyzes CO2 emissions at the county level.
 - Regions with higher emissions may have older infrastructure or higher energy demands.
 
+## Model training results
+![Model training results](https://res.cloudinary.com/duts0kfah/image/upload/v1740751286/Screenshot_2025-02-26_144232_irxmso.png)
+
 ## Conclusion
 The analysis highlights the critical role of insulation, construction standards, and regional factors in determining energy efficiency and CO2 emissions. By improving insulation and adopting energy-efficient practices, significant reductions in emissions can be achieved.
 
